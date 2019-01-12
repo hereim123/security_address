@@ -1,11 +1,36 @@
-@{title('Something awesome')}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="robots" content="all,follow" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    @{import('meta', 'head', 'default.css', 'default.js', 'favicon.ico')}
 
-<hr />
-<br />
-<p class="center">
-	The Node.js framework for all web developers with everything what you need.<br />
-	<b>Create something awesome.</b>
-</p>
-<br />
-<br />
-<div class="center"><a href="http://docs.totaljs.com" class="linkbutton">DOCUMENTATION</a></div>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-background">
+      <div class="container">
+        <br />
+        @{body}
+      </div>
+    </div>
+  </body>
+</html>
